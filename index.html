@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CatALog</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+     <div class="container">
+        <h1>Cat-a-Log</h1>
+        <h2>the cat finder app</h2>
+        <img id="catLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cat_silhouette.svg/800px-Cat_silhouette.svg.png" class="banner-img" alt="silhouette of a cat head"/>
+        <h3>Find adoptable cats in your area by selecting traits you want in a pet and entering your zipcode.</h3>
+         <form id="js-form">
+         <h4> Check desired traits:</h4>
+          <div class="checkboxes">
+            <input type="checkbox" class="boxes" name="trait" id="trait2" value="kid-friendly">kid-friendly<br>
+            <input type="checkbox" class="boxes" name="trait" id="trait3" value="dog-friendly">dog-friendly<br> 
+            <input type="checkbox" class="boxes" name="trait" id="trait4" value="social">social<br>
+            <input type="checkbox" class="boxes" name="trait" id="trait6" value="adaptability">adaptable<br>
+            <input type="checkbox" class="boxes" name="trait" id="trait7" value="low-grooming-needs">low grooming needs<br>
+            <input type="checkbox" class="boxes" name="trait" id="trait8"  value="stranger-friendly">stranger-friendly
+             <br>
+             <input type="checkbox" class="boxes" name="trait" id="trait9" value="energy_level">energetic<br>
+            </div>  
+         <br><h4 class="area"><label for="geo-area">Enter a zip code to search in:</label></h4>
+         <input type="text" name="geo-area" placeholder="91210" id="geo-area" required>
+           <br> <p><button type="button" class="submitButton"> Find cats!</button></p>
+        </form>
+        <p id="js-error-message" class="error-message"></p>
+        <div class ="results-wrapper">
+        </div>
+    </div>
+   <script src="script.js"></script>
+  </body>
+</html>
